@@ -1,18 +1,16 @@
 {
-  "type": "minecraft:smelting",
+  "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "cookingtime": 200,
-  "experience": 0.5,
-  "ingredient": [
-    {
-      "item": "forestry:tin_ore"
-    },
-    {
-      "item": "forestry:deepslate_tin_ore"
-    },
-    {
-      "item": "forestry:raw_tin"
+  "group": "tin_ingot",
+  "key": {
+    "#": {
+      "item": "forestry:tin_nugget"
     }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
   ],
   "result": {
     "count": 1,

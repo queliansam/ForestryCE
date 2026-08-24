@@ -106,6 +106,32 @@ public class BeeTaxonomy {
 					genus.setDefaultChromosome(BeeChromosomes.ACTIVITY, ForestryActivityTypes.CATHEMERAL);
 					genus.setDefaultChromosome(BeeChromosomes.CAVE_DWELLING, ForestryAlleles.TRUE);
 				});
+				family.defineSubTaxon(ForestryTaxa.GENUS_ROCKY, genus -> {
+					genus.setDefaultChromosome(BeeChromosomes.FLOWER_TYPE, ForestryFlowerTypes.ROCK);
+					genus.setDefaultChromosome(BeeChromosomes.ACTIVITY, ForestryActivityTypes.CATHEMERAL);
+					genus.setDefaultChromosome(BeeChromosomes.CAVE_DWELLING, ForestryAlleles.TRUE);
+					genus.setDefaultChromosome(BeeChromosomes.TOLERATES_RAIN, ForestryAlleles.TRUE);
+				});
+				family.defineSubTaxon(ForestryTaxa.GENUS_METALLIC, genus -> {
+					genus.setDefaultChromosome(BeeChromosomes.FLOWER_TYPE, ForestryFlowerTypes.ROCK);
+					genus.setDefaultChromosome(BeeChromosomes.ACTIVITY, ForestryActivityTypes.CATHEMERAL);
+					genus.setDefaultChromosome(BeeChromosomes.CAVE_DWELLING, ForestryAlleles.TRUE);
+				});
+				family.defineSubTaxon(ForestryTaxa.GENUS_GEMSTONE, genus -> {
+					genus.setDefaultChromosome(BeeChromosomes.FLOWER_TYPE, ForestryFlowerTypes.ROCK);
+					genus.setDefaultChromosome(BeeChromosomes.ACTIVITY, ForestryActivityTypes.CATHEMERAL);
+					genus.setDefaultChromosome(BeeChromosomes.CAVE_DWELLING, ForestryAlleles.TRUE);
+				});
+				family.defineSubTaxon(ForestryTaxa.GENUS_COPPER);
+				family.defineSubTaxon(ForestryTaxa.GENUS_IRON);
+				family.defineSubTaxon(ForestryTaxa.GENUS_TIN);
+				family.defineSubTaxon(ForestryTaxa.GENUS_GOLD);
+				family.defineSubTaxon(ForestryTaxa.GENUS_COAL);
+				family.defineSubTaxon(ForestryTaxa.GENUS_LAPIS);
+				family.defineSubTaxon(ForestryTaxa.GENUS_REDSTONE);
+				family.defineSubTaxon(ForestryTaxa.GENUS_EMERALD);
+				family.defineSubTaxon(ForestryTaxa.GENUS_DIAMOND);
+				family.defineSubTaxon(ForestryTaxa.GENUS_AMETHYST);
 				family.defineSubTaxon(ForestryTaxa.GENUS_ABOMINATION);
 				family.defineSubTaxon(ForestryTaxa.GENUS_AGRARIAN, genus -> {
 					genus.setDefaultChromosome(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOWER);

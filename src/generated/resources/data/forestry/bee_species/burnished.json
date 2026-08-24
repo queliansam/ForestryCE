@@ -1,0 +1,26 @@
+{
+  "genome": {
+    "forestry:humidity_tolerance": {
+      "value": "BOTH_2"
+    },
+    "forestry:lifespan": {
+      "value": 40
+    },
+    "forestry:speed": {
+      "dominant": true,
+      "value": 0.8
+    },
+    "forestry:temperature_tolerance": {
+      "value": "BOTH_2"
+    }
+  },
+  "genus": "ferrapis",
+  "outline": 11577759,
+  "products": [
+    {
+      "chance": 0.22,
+      "item": "forestry:heavy_comb"
+    }
+  ],
+  "species": "levigatus"
+}

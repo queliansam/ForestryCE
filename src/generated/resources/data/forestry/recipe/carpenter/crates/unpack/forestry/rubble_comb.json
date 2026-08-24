@@ -1,0 +1,18 @@
+{
+  "type": "forestry:carpenter",
+  "box": [],
+  "id": "forestry:carpenter/crates/unpack/forestry/rubble_comb",
+  "recipe": {
+    "category": "misc",
+    "ingredients": [
+      {
+        "item": "forestry:crated_rubble_comb"
+      }
+    ],
+    "result": {
+      "count": 9,
+      "id": "forestry:rubble_comb"
+    }
+  },
+  "time": 5
+}

@@ -149,6 +149,32 @@ public class ForestryRecipeProvider {
 	private static void registerApicultureRecipes(MKRecipeProvider recipes) {
 		registerCombRecipes(recipes);
 
+		// Copper nuggets, same shape as vanilla's iron/gold nuggets
+		recipes.shapelessCrafting(RecipeCategory.MISC, ApicultureItems.COPPER_NUGGET, 9, Items.COPPER_INGOT);
+		recipes.shapedCrafting(RecipeCategory.MISC, Items.COPPER_INGOT, recipe -> {
+			recipe.define('#', ApicultureItems.COPPER_NUGGET);
+			recipe.pattern("###");
+			recipe.pattern("###");
+			recipe.pattern("###");
+			recipe.group("copper_ingot");
+		});
+
+		// Emerald/Diamond pieces assemble into the full gem, same 3x3 shape as the nuggets
+		recipes.shapedCrafting(RecipeCategory.MISC, Items.EMERALD, recipe -> {
+			recipe.define('#', ApicultureItems.EMERALD_PIECE);
+			recipe.pattern("###");
+			recipe.pattern("###");
+			recipe.pattern("###");
+			recipe.group("emerald");
+		});
+		recipes.shapedCrafting(RecipeCategory.MISC, Items.DIAMOND, recipe -> {
+			recipe.define('#', ApicultureItems.DIAMOND_PIECE);
+			recipe.pattern("###");
+			recipe.pattern("###");
+			recipe.pattern("###");
+			recipe.group("diamond");
+		});
+
 		AlvearyBlock plain = ApicultureBlocks.ALVEARY.get(AlvearyBlock.Type.PLAIN).block();
 		ItemLike goldElectronTube = CoreItems.ELECTRON_TUBES.get(EnumElectronTube.GOLD);
 
@@ -1843,6 +1869,34 @@ public class ForestryRecipeProvider {
 			.product(1.0f, CoreItems.BEESWAX.stack())
 			.product(0.9F, honeyDrop)
 			.build(consumer, id("centrifuge", "honey_comb"));
+		new CentrifugeRecipeBuilder()
+			.setProcessingTime(20)
+			.setInput(Ingredient.of(ApicultureItems.BEE_COMBS.get(EnumHoneyComb.RUBBLE)))
+			.product(1.0f, CoreItems.BEESWAX.stack())
+			.product(0.5f, new ItemStack(Items.GRAVEL))
+			.build(consumer, id("centrifuge", "rubble_comb"));
+		new CentrifugeRecipeBuilder()
+			.setProcessingTime(20)
+			.setInput(Ingredient.of(ApicultureItems.BEE_COMBS.get(EnumHoneyComb.SIFTED)))
+			.product(1.0f, CoreItems.BEESWAX.stack())
+			.product(0.5f, new ItemStack(Items.GRAVEL))
+			.product(0.03f, new ItemStack(Items.GOLD_NUGGET))
+			.product(0.03f, new ItemStack(Items.IRON_NUGGET))
+			.product(0.03f, ApicultureItems.COPPER_NUGGET.stack())
+			.product(0.03f, CoreItems.TIN_NUGGET.stack())
+			.build(consumer, id("centrifuge", "sifted_comb"));
+		new CentrifugeRecipeBuilder()
+			.setProcessingTime(20)
+			.setInput(Ingredient.of(ApicultureItems.BEE_COMBS.get(EnumHoneyComb.RESONATING)))
+			.product(1.0f, ApicultureItems.PROPOLIS.stack(EnumPropolis.CRYSTALISED, 1))
+			.product(0.4f, honeyDrop)
+			.build(consumer, id("centrifuge", "resonating_comb"));
+		new CentrifugeRecipeBuilder()
+			.setProcessingTime(20)
+			.setInput(Ingredient.of(ApicultureItems.BEE_COMBS.get(EnumHoneyComb.HEAVY)))
+			.product(1.0f, ApicultureItems.MOLTEN_HONEY_DROP.stack())
+			.product(0.4f, honeyDrop)
+			.build(consumer, id("centrifuge", "heavy_comb"));
 		new CentrifugeRecipeBuilder()
 			.setProcessingTime(20)
 			.setInput(Ingredient.of(ApicultureItems.BEE_COMBS.get(EnumHoneyComb.COCOA)))

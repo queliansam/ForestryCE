@@ -1,0 +1,18 @@
+{
+  "type": "forestry:centrifuge",
+  "id": "forestry:centrifuge/resonating_comb",
+  "input": {
+    "item": "forestry:resonating_comb"
+  },
+  "products": [
+    {
+      "chance": 1.0,
+      "item": "forestry:crystalised_propolis"
+    },
+    {
+      "chance": 0.4,
+      "item": "forestry:honey_drop"
+    }
+  ],
+  "time": 20
+}

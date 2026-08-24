@@ -234,6 +234,7 @@ public final class ForestryBlockTagsProvider {
 		tags.tag(ForestryTags.Blocks.GOURD_FLOWERS).add(Blocks.MELON_STEM, Blocks.ATTACHED_MELON_STEM, Blocks.PUMPKIN_STEM, Blocks.ATTACHED_PUMPKIN_STEM);
 		tags.tag(ForestryTags.Blocks.ANCIENT_FLOWERS).add(Blocks.TORCHFLOWER, Blocks.PITCHER_PLANT, Blocks.POTTED_TORCHFLOWER);
 		tags.tag(ForestryTags.Blocks.CAVE_FLOWERS).add(Blocks.CAVE_VINES, Blocks.CAVE_VINES_PLANT, Blocks.SPORE_BLOSSOM);
+		tags.tag(ForestryTags.Blocks.ROCK_FLOWERS).addTag(BlockTags.BASE_STONE_OVERWORLD);
 		tags.tag(ForestryTags.Blocks.SEA_FLOWERS).add(Blocks.KELP, Blocks.KELP_PLANT);
 		tags.tag(ForestryTags.Blocks.CORAL_FLOWERS).addTags(BlockTags.CORALS).addTags(BlockTags.WALL_CORALS);
 		tags.tag(ForestryTags.Blocks.SCULK_FLOWERS).add(Blocks.SCULK_SHRIEKER, Blocks.SCULK_CATALYST, Blocks.SCULK_SENSOR);
@@ -250,6 +251,11 @@ public final class ForestryBlockTagsProvider {
 		tags.tag(ForestryTags.Blocks.WINTRY_BEE_GROUND).addTag(BlockTags.DIRT).addTag(BlockTags.SNOW);
 		tags.tag(ForestryTags.Blocks.ENDED_BEE_GROUND).add(Blocks.END_STONE);
 		tags.tag(ForestryTags.Blocks.LUSH_BEE_CEILING).add(Blocks.MOSS_BLOCK).add(Blocks.ROOTED_DIRT);
+		tags.tag(ForestryTags.Blocks.STONE_BEE_CEILING).addTag(BlockTags.BASE_STONE_OVERWORLD);
+		tags.tag(ForestryTags.Blocks.GRANITE_BEE_CEILING).add(Blocks.GRANITE);
+		tags.tag(ForestryTags.Blocks.ANDESITE_BEE_CEILING).add(Blocks.ANDESITE);
+		tags.tag(ForestryTags.Blocks.DIORITE_BEE_CEILING).add(Blocks.DIORITE);
+		tags.tag(ForestryTags.Blocks.DEEPSLATE_BEE_CEILING).add(Blocks.DEEPSLATE);
 		tags.tag(ForestryTags.Blocks.CAVE_EXTRA_REPLACEABLES).add(Blocks.POINTED_DRIPSTONE).add(Blocks.CAVE_VINES).add(Blocks.CAVE_VINES_PLANT).add(Blocks.HANGING_ROOTS).add(Blocks.GLOW_LICHEN);
 		tags.tag(ForestryTags.Blocks.NETHER_EXTRA_REPLACEABLES).add(Blocks.WEEPING_VINES, Blocks.WEEPING_VINES_PLANT, Blocks.TWISTING_VINES, Blocks.TWISTING_VINES_PLANT);
 	}

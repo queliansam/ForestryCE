@@ -1,0 +1,29 @@
+{
+  "dominant": true,
+  "genome": {
+    "forestry:humidity_tolerance": {
+      "dominant": true,
+      "value": "BOTH_1"
+    },
+    "forestry:lifespan": {
+      "value": 40
+    },
+    "forestry:speed": {
+      "dominant": true,
+      "value": 0.6
+    },
+    "forestry:temperature_tolerance": {
+      "dominant": true,
+      "value": "BOTH_1"
+    }
+  },
+  "genus": "gemmapis",
+  "outline": 13213951,
+  "products": [
+    {
+      "chance": 0.28,
+      "item": "forestry:sifted_comb"
+    }
+  ],
+  "species": "crystallinus"
+}

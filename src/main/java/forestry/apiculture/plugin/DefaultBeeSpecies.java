@@ -847,5 +847,250 @@ public class DefaultBeeSpecies {
 			})
 			.setAuthority("TheDarkColour")
 			.setSecret(true);
+
+		// Stone
+		apiculture.registerSpecies(ForestryBeeSpecies.STONE, GENUS_ROCKY, SPECIES_STONE, true, TextColor.fromRgb(0x9c9c9c))
+			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RUBBLE), 0.30f)
+			.setGenome(genome -> {
+				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOWEST);
+				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
+				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_1);
+				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_1);
+			});
+
+		// Granite
+		apiculture.registerSpecies(ForestryBeeSpecies.GRANITE, GENUS_ROCKY, SPECIES_GRANITE, true, TextColor.fromRgb(0xb08a7a))
+			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RUBBLE), 0.30f)
+			.setGenome(genome -> {
+				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOWEST);
+				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
+				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+			});
+
+		// Andesite
+		apiculture.registerSpecies(ForestryBeeSpecies.ANDESITE, GENUS_ROCKY, SPECIES_ANDESITE, true, TextColor.fromRgb(0x7d7d75))
+			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RUBBLE), 0.30f)
+			.setGenome(genome -> {
+				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOWEST);
+				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
+				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_1);
+				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_1);
+			});
+
+		// Diorite
+		apiculture.registerSpecies(ForestryBeeSpecies.DIORITE, GENUS_ROCKY, SPECIES_DIORITE, true, TextColor.fromRgb(0xdcdcdc))
+			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RUBBLE), 0.30f)
+			.setGenome(genome -> {
+				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOWEST);
+				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
+				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_1);
+				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_1);
+			});
+
+		// Deepslate
+		apiculture.registerSpecies(ForestryBeeSpecies.DEEPSLATE, GENUS_ROCKY, SPECIES_DEEPSLATE, true, TextColor.fromRgb(0x4a4a4d))
+			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RUBBLE), 0.30f)
+			.setGenome(genome -> {
+				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOWEST);
+				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
+				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+			});
+
+		// Structured (root hub, mirrors Common - bred from any 2 of the 5 wilds)
+		apiculture.registerSpecies(ForestryBeeSpecies.STRUCTURED, GENUS_ROCKY, SPECIES_STRUCTURED, true, TextColor.fromRgb(0x6e7239))
+			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RUBBLE), 0.30f)
+			.setGenome(genome -> {
+				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOWEST);
+				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
+				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_1);
+				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_1);
+			});
+
+		// Mineral (second hub, mirrors Cultivated - bred from Structured x 1 wild)
+		apiculture.registerSpecies(ForestryBeeSpecies.MINERAL, GENUS_ROCKY, SPECIES_MINERAL, true, TextColor.fromRgb(0x8a7d5c))
+			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RUBBLE), 0.30f)
+			.setGenome(genome -> {
+				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOWEST);
+				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
+				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+			});
+
+		// Crystalline (first split - gemstone side, mirrors Diligent/Noble)
+		apiculture.registerSpecies(ForestryBeeSpecies.CRYSTALLINE, GENUS_GEMSTONE, SPECIES_CRYSTALLINE, true, TextColor.fromRgb(0xc9a0ff))
+			.addProduct(BEE_COMBS.stack(EnumHoneyComb.SIFTED), 0.28f)
+			.setGenome(genome -> {
+				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOWER);
+				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
+				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_1);
+				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_1);
+			});
+
+		// Veined (first split - metallic side, mirrors Diligent/Noble)
+		apiculture.registerSpecies(ForestryBeeSpecies.VEINED, GENUS_METALLIC, SPECIES_VEINED, true, TextColor.fromRgb(0x8f6b4a))
+			.addProduct(BEE_COMBS.stack(EnumHoneyComb.SIFTED), 0.28f)
+			.setGenome(genome -> {
+				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOWER);
+				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
+				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_1);
+				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_1);
+			});
+
+		// Lustrous (gemstone tier 2, Brilliant/Envious path)
+		apiculture.registerSpecies(ForestryBeeSpecies.LUSTROUS, GENUS_GEMSTONE, SPECIES_LUSTROUS, false, TextColor.fromRgb(0xd9b3ff))
+			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RESONATING), 0.22f)
+			.setGenome(genome -> {
+				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
+				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
+				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+			});
+
+		// Opulent (gemstone tier 2, Serene/Ultramarine path)
+		apiculture.registerSpecies(ForestryBeeSpecies.OPULENT, GENUS_GEMSTONE, SPECIES_OPULENT, false, TextColor.fromRgb(0xba7fe0))
+			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RESONATING), 0.22f)
+			.setGenome(genome -> {
+				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
+				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
+				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+			});
+
+		// Burnished (metallic tier 2, Conductive/Stannous path)
+		apiculture.registerSpecies(ForestryBeeSpecies.BURNISHED, GENUS_METALLIC, SPECIES_BURNISHED, false, TextColor.fromRgb(0xb0a99f))
+			.addProduct(BEE_COMBS.stack(EnumHoneyComb.HEAVY), 0.22f)
+			.setGenome(genome -> {
+				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
+				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
+				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+			});
+
+		// Glistening (metallic tier 2, Stalwart/Regal path)
+		apiculture.registerSpecies(ForestryBeeSpecies.GLISTENING, GENUS_METALLIC, SPECIES_GLISTENING, false, TextColor.fromRgb(0xc0c0c0))
+			.addProduct(BEE_COMBS.stack(EnumHoneyComb.HEAVY), 0.22f)
+			.setGenome(genome -> {
+				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
+				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
+				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+			});
+
+		// Pulsating (central branch - Redstone)
+		apiculture.registerSpecies(ForestryBeeSpecies.PULSATING, GENUS_REDSTONE, SPECIES_PULSATING, false, TextColor.fromRgb(0xb0201c))
+			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RESONATING), 0.20f)
+			.addSpecialty(new ItemStack(Items.REDSTONE), 0.10f)
+			.setGenome(genome -> {
+				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
+				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
+				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+			})
+			.setGlint(true);
+
+		// Carbonised (central branch - Coal)
+		apiculture.registerSpecies(ForestryBeeSpecies.CARBONISED, GENUS_COAL, SPECIES_CARBONISED, false, TextColor.fromRgb(0x2b2b2b))
+			.addProduct(BEE_COMBS.stack(EnumHoneyComb.HEAVY), 0.20f)
+			.addSpecialty(new ItemStack(Items.COAL), 0.10f)
+			.setGenome(genome -> {
+				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
+				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
+				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+			});
+
+		// Brilliant (gemstone leaf, Lustrous path - Diamond)
+		apiculture.registerSpecies(ForestryBeeSpecies.BRILLIANT, GENUS_DIAMOND, SPECIES_BRILLIANT, false, TextColor.fromRgb(0x5decf0))
+			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RESONATING), 0.10f)
+			.addSpecialty(ApicultureItems.DIAMOND_PIECE.stack(), 0.04f)
+			.setGenome(genome -> {
+				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
+				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_LONG);
+				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+			})
+			.setGlint(true);
+
+		// Envious (gemstone leaf, Lustrous path - Emerald)
+		apiculture.registerSpecies(ForestryBeeSpecies.ENVIOUS, GENUS_EMERALD, SPECIES_ENVIOUS, false, TextColor.fromRgb(0x17dd62))
+			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RESONATING), 0.14f)
+			.addSpecialty(ApicultureItems.EMERALD_PIECE.stack(), 0.08f)
+			.setGenome(genome -> {
+				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
+				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_LONG);
+				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+			})
+			.setGlint(true);
+
+		// Serene (gemstone leaf, Opulent path - Amethyst)
+		apiculture.registerSpecies(ForestryBeeSpecies.SERENE, GENUS_AMETHYST, SPECIES_SERENE, false, TextColor.fromRgb(0x9966cc))
+			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RESONATING), 0.12f)
+			.addSpecialty(new ItemStack(Items.AMETHYST_SHARD), 0.05f)
+			.setGenome(genome -> {
+				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
+				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_LONG);
+				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+			})
+			.setGlint(true);
+
+		// Cerulean (gemstone leaf, Opulent path - Lapis)
+		apiculture.registerSpecies(ForestryBeeSpecies.CERULEAN, GENUS_LAPIS, SPECIES_CERULEAN, false, TextColor.fromRgb(0x2f5da8))
+			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RESONATING), 0.16f)
+			.addSpecialty(new ItemStack(Items.LAPIS_LAZULI), 0.08f)
+			.setGenome(genome -> {
+				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
+				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
+				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+			});
+
+		// Conductive (metallic leaf, Burnished path - Copper)
+		apiculture.registerSpecies(ForestryBeeSpecies.CONDUCTIVE, GENUS_COPPER, SPECIES_CONDUCTIVE, false, TextColor.fromRgb(0xb87333))
+			.addProduct(BEE_COMBS.stack(EnumHoneyComb.HEAVY), 0.16f)
+			.addSpecialty(ApicultureItems.COPPER_NUGGET.stack(), 0.08f)
+			.setGenome(genome -> {
+				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
+				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
+				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+			});
+
+		// Stannous (metallic leaf, Burnished path - Tin)
+		apiculture.registerSpecies(ForestryBeeSpecies.STANNOUS, GENUS_TIN, SPECIES_STANNOUS, false, TextColor.fromRgb(0xc9d6dd))
+			.addProduct(BEE_COMBS.stack(EnumHoneyComb.HEAVY), 0.12f)
+			.addSpecialty(CoreItems.TIN_NUGGET.stack(), 0.05f)
+			.setGenome(genome -> {
+				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
+				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
+				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+			});
+
+		// Stalwart (metallic leaf, Glistening path - Iron)
+		apiculture.registerSpecies(ForestryBeeSpecies.STALWART, GENUS_IRON, SPECIES_STALWART, false, TextColor.fromRgb(0xd8d8d8))
+			.addProduct(BEE_COMBS.stack(EnumHoneyComb.HEAVY), 0.14f)
+			.addSpecialty(new ItemStack(Items.IRON_NUGGET), 0.08f)
+			.setGenome(genome -> {
+				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
+				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
+				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+			});
+
+		// Regal (metallic leaf, Glistening path - Gold)
+		apiculture.registerSpecies(ForestryBeeSpecies.REGAL, GENUS_GOLD, SPECIES_REGAL, false, TextColor.fromRgb(0xffd700))
+			.addProduct(BEE_COMBS.stack(EnumHoneyComb.HEAVY), 0.10f)
+			.addSpecialty(new ItemStack(Items.GOLD_NUGGET), 0.04f)
+			.setGenome(genome -> {
+				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
+				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_LONG);
+				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
+			})
+			.setGlint(true);
 	}
 }

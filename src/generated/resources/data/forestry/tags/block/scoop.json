@@ -11,6 +11,11 @@
     "forestry:lush_hive",
     "forestry:aquatic_hive",
     "forestry:nether_hive",
+    "forestry:stone_hive",
+    "forestry:granite_hive",
+    "forestry:andesite_hive",
+    "forestry:diorite_hive",
+    "forestry:deepslate_hive",
     "forestry:swarm_hive"
   ]
 }

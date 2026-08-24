@@ -1,0 +1,33 @@
+{
+  "genome": {
+    "forestry:humidity_tolerance": {
+      "value": "BOTH_2"
+    },
+    "forestry:lifespan": {
+      "value": 50
+    },
+    "forestry:speed": {
+      "dominant": true,
+      "value": 0.8
+    },
+    "forestry:temperature_tolerance": {
+      "value": "BOTH_2"
+    }
+  },
+  "genus": "adamantapis",
+  "glint": true,
+  "outline": 6155504,
+  "products": [
+    {
+      "chance": 0.1,
+      "item": "forestry:resonating_comb"
+    }
+  ],
+  "specialties": [
+    {
+      "chance": 0.04,
+      "item": "forestry:diamond_piece"
+    }
+  ],
+  "species": "splendidus"
+}

@@ -45,6 +45,10 @@ public class ApicultureItems {
 		.create();
 
 	public static final FeatureItem<Item> ROYAL_JELLY = REGISTRY.item("royal_jelly");
+	public static final FeatureItem<Item> MOLTEN_HONEY_DROP = REGISTRY.item("molten_honey_drop");
+	public static final FeatureItem<Item> COPPER_NUGGET = REGISTRY.item("copper_nugget");
+	public static final FeatureItem<Item> EMERALD_PIECE = REGISTRY.item("emerald_piece");
+	public static final FeatureItem<Item> DIAMOND_PIECE = REGISTRY.item("diamond_piece");
 
 	public static final FeatureItemGroup<PollenClusterItem, EnumPollenCluster> POLLEN_CLUSTER = REGISTRY
 		.itemGroup(PollenClusterItem::new, EnumPollenCluster.values())

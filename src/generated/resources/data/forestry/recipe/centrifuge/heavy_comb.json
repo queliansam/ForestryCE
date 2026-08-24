@@ -1,0 +1,18 @@
+{
+  "type": "forestry:centrifuge",
+  "id": "forestry:centrifuge/heavy_comb",
+  "input": {
+    "item": "forestry:heavy_comb"
+  },
+  "products": [
+    {
+      "chance": 1.0,
+      "item": "forestry:molten_honey_drop"
+    },
+    {
+      "chance": 0.4,
+      "item": "forestry:honey_drop"
+    }
+  ],
+  "time": 20
+}

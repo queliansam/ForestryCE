@@ -243,6 +243,7 @@ public class ModuleCore extends BlankForestryModule {
 		forestryCommand.then(DiagnosticsCommand.register());
 		forestryCommand.then(DumpCommand.register());
 		forestryCommand.then(forestry.core.platform.commands.MultiblockDebugCommand.register());
+		// todo rocky hive locate debug commands, once rocky hive worldgen is ported to HiveBlockType
 
 		for (IForestryModule module : IForestryApi.INSTANCE.getModuleManager().getModulesForMod(ForestryConstants.MOD_ID)) {
 			if (module instanceof BlankForestryModule forestryModule) {

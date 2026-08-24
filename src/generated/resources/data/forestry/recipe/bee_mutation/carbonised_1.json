@@ -1,0 +1,13 @@
+{
+  "type": "forestry:bee_mutation",
+  "chance": 0.08,
+  "conditions": [
+    {
+      "type": "forestry:cave"
+    }
+  ],
+  "first": "forestry:crystalline",
+  "id": "forestry:bee_mutation/carbonised_1",
+  "result": "forestry:carbonised",
+  "second": "forestry:veined"
+}

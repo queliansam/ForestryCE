@@ -1,0 +1,32 @@
+{
+  "genome": {
+    "forestry:humidity_tolerance": {
+      "value": "BOTH_2"
+    },
+    "forestry:lifespan": {
+      "value": 40
+    },
+    "forestry:speed": {
+      "dominant": true,
+      "value": 0.8
+    },
+    "forestry:temperature_tolerance": {
+      "value": "BOTH_2"
+    }
+  },
+  "genus": "stannapis",
+  "outline": 13227741,
+  "products": [
+    {
+      "chance": 0.12,
+      "item": "forestry:heavy_comb"
+    }
+  ],
+  "specialties": [
+    {
+      "chance": 0.05,
+      "item": "forestry:tin_nugget"
+    }
+  ],
+  "species": "stannosus"
+}

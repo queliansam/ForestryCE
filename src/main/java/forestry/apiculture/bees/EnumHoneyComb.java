@@ -25,6 +25,10 @@ public enum EnumHoneyComb implements StringRepresentable, IItemSubtype, IBlockSu
 	VINTAGE(TextColor.fromRgb(0xDEB887), TextColor.fromRgb(0xCD853F)),
 	SPONGY(TextColor.fromRgb(0x9D8F39), TextColor.fromRgb(0xe1e351)),
 	SCULKEN(TextColor.fromRgb(0x111B21), TextColor.fromRgb(0x05625d)),
+	RUBBLE(TextColor.fromRgb(0x8a8a8a), TextColor.fromRgb(0x5c5c5c)),
+	SIFTED(TextColor.fromRgb(0x9c9484), TextColor.fromRgb(0x6b6558)),
+	RESONATING(TextColor.fromRgb(0xa876d1), TextColor.fromRgb(0x6f4a94)),
+	HEAVY(TextColor.fromRgb(0x8c7a5e), TextColor.fromRgb(0x5c4f3d)),
 	//LUMINOUS(TextColor.fromRgb(0x495E27), TextColor.fromRgb(0xF7CE46));
 	;
 	//""(TextColor.fromRgb(0xd7bee5), TextColor.fromRgb(0xfd58ab)); // kindof pinkish

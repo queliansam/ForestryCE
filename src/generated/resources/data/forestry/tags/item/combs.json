@@ -16,6 +16,10 @@
     "forestry:kaolin_comb",
     "forestry:vintage_comb",
     "forestry:spongy_comb",
-    "forestry:sculken_comb"
+    "forestry:sculken_comb",
+    "forestry:rubble_comb",
+    "forestry:sifted_comb",
+    "forestry:resonating_comb",
+    "forestry:heavy_comb"
   ]
 }

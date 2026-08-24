@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "combs",
+  "key": {
+    "#": {
+      "item": "forestry:resonating_comb"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 1,
+    "id": "forestry:resonating_comb_block"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "forestry:bee_mutation",
+  "chance": 0.08,
+  "conditions": [
+    {
+      "type": "forestry:cave"
+    }
+  ],
+  "first": "forestry:veined",
+  "id": "forestry:bee_mutation/conductive_1",
+  "result": "forestry:conductive",
+  "second": "forestry:burnished"
+}

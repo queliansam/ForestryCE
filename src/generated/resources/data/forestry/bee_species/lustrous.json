@@ -1,0 +1,26 @@
+{
+  "genome": {
+    "forestry:humidity_tolerance": {
+      "value": "BOTH_2"
+    },
+    "forestry:lifespan": {
+      "value": 40
+    },
+    "forestry:speed": {
+      "dominant": true,
+      "value": 0.8
+    },
+    "forestry:temperature_tolerance": {
+      "value": "BOTH_2"
+    }
+  },
+  "genus": "gemmapis",
+  "outline": 14267391,
+  "products": [
+    {
+      "chance": 0.22,
+      "item": "forestry:resonating_comb"
+    }
+  ],
+  "species": "nitidus"
+}

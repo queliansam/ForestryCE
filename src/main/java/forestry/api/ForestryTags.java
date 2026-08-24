@@ -51,6 +51,7 @@ public class ForestryTags {
 		public static final TagKey<Block> GOURD_FLOWERS = blockTag("flowers/gourd");
 		public static final TagKey<Block> ANCIENT_FLOWERS = blockTag("flowers/ancient");
 		public static final TagKey<Block> CAVE_FLOWERS = blockTag("flowers/cave");
+		public static final TagKey<Block> ROCK_FLOWERS = blockTag("flowers/rock");
 		public static final TagKey<Block> SEA_FLOWERS = blockTag("flowers/sea");
 		public static final TagKey<Block> CORAL_FLOWERS = blockTag("flowers/coral");
 		public static final TagKey<Block> SCULK_FLOWERS = blockTag("flowers/sculk");
@@ -64,6 +65,11 @@ public class ForestryTags {
 		public static final TagKey<Block> ENDED_BEE_GROUND = blockTag("hive_grounds/ended");
 		public static final TagKey<Block> WINTRY_BEE_GROUND = blockTag("hive_grounds/wintry");
 		public static final TagKey<Block> LUSH_BEE_CEILING = blockTag("hive_grounds/lush");
+		public static final TagKey<Block> STONE_BEE_CEILING = blockTag("hive_grounds/stone");
+		public static final TagKey<Block> GRANITE_BEE_CEILING = blockTag("hive_grounds/granite");
+		public static final TagKey<Block> ANDESITE_BEE_CEILING = blockTag("hive_grounds/andesite");
+		public static final TagKey<Block> DIORITE_BEE_CEILING = blockTag("hive_grounds/diorite");
+		public static final TagKey<Block> DEEPSLATE_BEE_CEILING = blockTag("hive_grounds/deepslate");
 		public static final TagKey<Block> CAVE_EXTRA_REPLACEABLES = blockTag("hive_grounds/cave_extra_replaceable");
 		public static final TagKey<Block> NETHER_EXTRA_REPLACEABLES = blockTag("hive_grounds/nether_extra_replaceable");
 		// Blocks where the Alveary Swarmer can spawn hives on top of

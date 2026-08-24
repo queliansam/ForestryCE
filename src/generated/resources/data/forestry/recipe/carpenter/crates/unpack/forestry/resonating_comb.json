@@ -1,0 +1,18 @@
+{
+  "type": "forestry:carpenter",
+  "box": [],
+  "id": "forestry:carpenter/crates/unpack/forestry/resonating_comb",
+  "recipe": {
+    "category": "misc",
+    "ingredients": [
+      {
+        "item": "forestry:crated_resonating_comb"
+      }
+    ],
+    "result": {
+      "count": 9,
+      "id": "forestry:resonating_comb"
+    }
+  },
+  "time": 5
+}

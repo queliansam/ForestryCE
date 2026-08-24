@@ -64,6 +64,7 @@ public class FlowerTypeProvider implements DataProvider {
 		add(ForestryFlowerTypes.SEA, new WaterTagFlowerType(ForestryTags.Blocks.SEA_FLOWERS, false));
 		add(ForestryFlowerTypes.CORAL, new WaterTagFlowerType(ForestryTags.Blocks.CORAL_FLOWERS, false));
 		add(ForestryFlowerTypes.SCULK, new TagFlowerType(ForestryTags.Blocks.SCULK_FLOWERS, false));
+		add(ForestryFlowerTypes.ROCK, new TagFlowerType(ForestryTags.Blocks.ROCK_FLOWERS, true));
 	}
 
 	protected void add(ResourceLocation id, IFlowerType type) {

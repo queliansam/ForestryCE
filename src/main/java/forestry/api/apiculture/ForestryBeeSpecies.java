@@ -77,4 +77,27 @@ public class ForestryBeeSpecies {
 	public static final ResourceLocation ZOMBIFIED = forestry("zombified");
 	public static final ResourceLocation SCULK = forestry("sculk");
 	public static final ResourceLocation VANILLA = forestry("vanilla");
+	public static final ResourceLocation STONE = forestry("stone");
+	public static final ResourceLocation GRANITE = forestry("granite");
+	public static final ResourceLocation ANDESITE = forestry("andesite");
+	public static final ResourceLocation DIORITE = forestry("diorite");
+	public static final ResourceLocation DEEPSLATE = forestry("deepslate");
+	public static final ResourceLocation STRUCTURED = forestry("structured");
+	public static final ResourceLocation MINERAL = forestry("mineral");
+	public static final ResourceLocation VEINED = forestry("veined");
+	public static final ResourceLocation CRYSTALLINE = forestry("crystalline");
+	public static final ResourceLocation LUSTROUS = forestry("lustrous");
+	public static final ResourceLocation OPULENT = forestry("opulent");
+	public static final ResourceLocation BURNISHED = forestry("burnished");
+	public static final ResourceLocation GLISTENING = forestry("glistening");
+	public static final ResourceLocation PULSATING = forestry("pulsating");
+	public static final ResourceLocation CARBONISED = forestry("carbonised");
+	public static final ResourceLocation BRILLIANT = forestry("brilliant");
+	public static final ResourceLocation ENVIOUS = forestry("envious");
+	public static final ResourceLocation SERENE = forestry("serene");
+	public static final ResourceLocation CERULEAN = forestry("cerulean");
+	public static final ResourceLocation CONDUCTIVE = forestry("conductive");
+	public static final ResourceLocation STANNOUS = forestry("stannous");
+	public static final ResourceLocation STALWART = forestry("stalwart");
+	public static final ResourceLocation REGAL = forestry("regal");
 }

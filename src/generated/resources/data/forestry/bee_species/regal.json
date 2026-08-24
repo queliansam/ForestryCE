@@ -1,0 +1,33 @@
+{
+  "genome": {
+    "forestry:humidity_tolerance": {
+      "value": "BOTH_2"
+    },
+    "forestry:lifespan": {
+      "value": 50
+    },
+    "forestry:speed": {
+      "dominant": true,
+      "value": 0.8
+    },
+    "forestry:temperature_tolerance": {
+      "value": "BOTH_2"
+    }
+  },
+  "genus": "aurapis",
+  "glint": true,
+  "outline": 16766720,
+  "products": [
+    {
+      "chance": 0.1,
+      "item": "forestry:heavy_comb"
+    }
+  ],
+  "specialties": [
+    {
+      "chance": 0.04,
+      "item": "minecraft:gold_nugget"
+    }
+  ],
+  "species": "regius"
+}

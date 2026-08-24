@@ -1,0 +1,34 @@
+{
+  "type": "forestry:centrifuge",
+  "id": "forestry:centrifuge/sifted_comb",
+  "input": {
+    "item": "forestry:sifted_comb"
+  },
+  "products": [
+    {
+      "chance": 1.0,
+      "item": "forestry:beeswax"
+    },
+    {
+      "chance": 0.5,
+      "item": "minecraft:gravel"
+    },
+    {
+      "chance": 0.03,
+      "item": "minecraft:gold_nugget"
+    },
+    {
+      "chance": 0.03,
+      "item": "minecraft:iron_nugget"
+    },
+    {
+      "chance": 0.03,
+      "item": "forestry:copper_nugget"
+    },
+    {
+      "chance": 0.03,
+      "item": "forestry:tin_nugget"
+    }
+  ],
+  "time": 20
+}

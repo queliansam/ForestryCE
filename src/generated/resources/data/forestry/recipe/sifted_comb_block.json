@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "combs",
+  "key": {
+    "#": {
+      "item": "forestry:sifted_comb"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 1,
+    "id": "forestry:sifted_comb_block"
+  }
+}

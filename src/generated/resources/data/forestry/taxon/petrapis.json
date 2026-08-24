@@ -1,0 +1,22 @@
+{
+  "type": "forestry:bee_species",
+  "parent": "apidae",
+  "alleles": {
+    "forestry:activity": {
+      "value": "forestry:activity_cathemeral"
+    },
+    "forestry:cave_dwelling": {
+      "dominant": true,
+      "value": true
+    },
+    "forestry:flower_type": {
+      "value": "forestry:flower_type_rock"
+    },
+    "forestry:tolerates_rain": {
+      "dominant": true,
+      "value": true
+    }
+  },
+  "name": "petrapis",
+  "rank": "genus"
+}

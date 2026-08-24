@@ -1,0 +1,13 @@
+{
+  "type": "forestry:bee_mutation",
+  "chance": 0.12,
+  "conditions": [
+    {
+      "type": "forestry:cave"
+    }
+  ],
+  "first": "forestry:diorite",
+  "id": "forestry:bee_mutation/structured_10",
+  "result": "forestry:structured",
+  "second": "forestry:deepslate"
+}

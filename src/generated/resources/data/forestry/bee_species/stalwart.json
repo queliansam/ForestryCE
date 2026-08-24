@@ -1,0 +1,32 @@
+{
+  "genome": {
+    "forestry:humidity_tolerance": {
+      "value": "BOTH_2"
+    },
+    "forestry:lifespan": {
+      "value": 40
+    },
+    "forestry:speed": {
+      "dominant": true,
+      "value": 0.8
+    },
+    "forestry:temperature_tolerance": {
+      "value": "BOTH_2"
+    }
+  },
+  "genus": "ferrumapis",
+  "outline": 14211288,
+  "products": [
+    {
+      "chance": 0.14,
+      "item": "forestry:heavy_comb"
+    }
+  ],
+  "specialties": [
+    {
+      "chance": 0.08,
+      "item": "minecraft:iron_nugget"
+    }
+  ],
+  "species": "fortis"
+}

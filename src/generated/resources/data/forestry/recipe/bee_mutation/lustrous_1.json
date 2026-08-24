@@ -1,0 +1,13 @@
+{
+  "type": "forestry:bee_mutation",
+  "chance": 0.06,
+  "conditions": [
+    {
+      "type": "forestry:cave"
+    }
+  ],
+  "first": "forestry:crystalline",
+  "id": "forestry:bee_mutation/lustrous_1",
+  "result": "forestry:lustrous",
+  "second": "forestry:mineral"
+}

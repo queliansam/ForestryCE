@@ -19,6 +19,11 @@ public enum HiveBlockType implements IBlockSubtype {
 	LUSH(ForestryBeeSpecies.LUSH),
 	AQUATIC(ForestryBeeSpecies.AQUATIC),
 	NETHER(ForestryBeeSpecies.EMBITTERED),
+	STONE(ForestryBeeSpecies.STONE),
+	GRANITE(ForestryBeeSpecies.GRANITE),
+	ANDESITE(ForestryBeeSpecies.ANDESITE),
+	DIORITE(ForestryBeeSpecies.DIORITE),
+	DEEPSLATE(ForestryBeeSpecies.DEEPSLATE),
 	SWARM(ForestryConstants.forestry("none"));
 
 	private final ResourceLocation speciesUid;
