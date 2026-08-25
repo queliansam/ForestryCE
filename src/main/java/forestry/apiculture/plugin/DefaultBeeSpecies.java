@@ -1114,7 +1114,8 @@ public class DefaultBeeSpecies {
 				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
 				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
 				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
-			});
+			})
+			.setGlint(true);
 
 		// Stalwart (metallic leaf, Glistening path - Iron)
 		apiculture.registerSpecies(ForestryBeeSpecies.STALWART, GENUS_IRON, SPECIES_STALWART, false, TextColor.fromRgb(0xa6a6a6))

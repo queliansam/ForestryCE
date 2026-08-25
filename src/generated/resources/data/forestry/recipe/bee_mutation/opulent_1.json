@@ -1,6 +1,6 @@
 {
   "type": "forestry:bee_mutation",
-  "chance": 0.1,
+  "chance": 0.04,
   "conditions": [
     {
       "type": "forestry:cave"

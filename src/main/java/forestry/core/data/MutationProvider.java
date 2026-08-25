@@ -180,7 +180,7 @@ public class MutationProvider implements DataProvider {
 		ResourceLocation[] rockyWilds = {STONE, GRANITE, ANDESITE, DIORITE, DEEPSLATE};
 		for (int i = 0; i < rockyWilds.length; i++) {
 			for (int j = i + 1; j < rockyWilds.length; j++) {
-				add(ForestrySpeciesTypes.BEE, rockyWilds[i], rockyWilds[j], STRUCTURED, 0.12f).cave();
+				add(ForestrySpeciesTypes.BEE, rockyWilds[i], rockyWilds[j], STRUCTURED, 0.10f).cave();
 			}
 		}
 
@@ -194,32 +194,32 @@ public class MutationProvider implements DataProvider {
 		add(ForestrySpeciesTypes.BEE, MINERAL, STRUCTURED, VEINED, 0.10f).cave();
 
 		// Central branch: the two branch-founders crossed directly. Pulsating is rarer than Carbonised.
-		add(ForestrySpeciesTypes.BEE, CRYSTALLINE, VEINED, PULSATING, 0.05f).cave();
+		add(ForestrySpeciesTypes.BEE, CRYSTALLINE, VEINED, PULSATING, 0.04f).cave();
 		add(ForestrySpeciesTypes.BEE, CRYSTALLINE, VEINED, CARBONISED, 0.08f).cave();
 
 		// Gemstone tier 2 fork (Opulent more common, Lustrous rarer)
-		add(ForestrySpeciesTypes.BEE, CRYSTALLINE, MINERAL, OPULENT, 0.10f).cave();
-		add(ForestrySpeciesTypes.BEE, CRYSTALLINE, MINERAL, LUSTROUS, 0.06f).cave();
+		add(ForestrySpeciesTypes.BEE, CRYSTALLINE, MINERAL, OPULENT, 0.04f).cave();
+		add(ForestrySpeciesTypes.BEE, CRYSTALLINE, MINERAL, LUSTROUS, 0.02f).cave();
 
 		// Gemstone leaves, Lustrous path (Envious more common, Brilliant rarer)
-		add(ForestrySpeciesTypes.BEE, CRYSTALLINE, LUSTROUS, ENVIOUS, 0.08f).cave();
-		add(ForestrySpeciesTypes.BEE, CRYSTALLINE, LUSTROUS, BRILLIANT, 0.04f).cave();
+		add(ForestrySpeciesTypes.BEE, CRYSTALLINE, LUSTROUS, ENVIOUS, 0.04f).cave();
+		add(ForestrySpeciesTypes.BEE, CRYSTALLINE, LUSTROUS, BRILLIANT, 0.02f).cave();
 
-		// Gemstone leaves, Opulent path (Ultramarine more common, Serene rarer)
-		add(ForestrySpeciesTypes.BEE, OPULENT, CRYSTALLINE, CERULEAN, 0.08f).cave();
-		add(ForestrySpeciesTypes.BEE, OPULENT, CRYSTALLINE, SERENE, 0.05f).cave();
+		// Gemstone leaves, Opulent path (Cerulean more common, Serene rarer)
+		add(ForestrySpeciesTypes.BEE, OPULENT, CRYSTALLINE, CERULEAN, 0.04f).cave();
+		add(ForestrySpeciesTypes.BEE, OPULENT, CRYSTALLINE, SERENE, 0.02f).cave();
 
 		// Metallic tier 2 fork (Burnished more common, Glistening rarer)
-		add(ForestrySpeciesTypes.BEE, VEINED, MINERAL, BURNISHED, 0.10f).cave();
-		add(ForestrySpeciesTypes.BEE, VEINED, MINERAL, GLISTENING, 0.06f).cave();
+		add(ForestrySpeciesTypes.BEE, VEINED, MINERAL, BURNISHED, 0.04f).cave();
+		add(ForestrySpeciesTypes.BEE, VEINED, MINERAL, GLISTENING, 0.02f).cave();
 
 		// Metallic leaves, Burnished path (Conductive more common, Stannous rarer)
-		add(ForestrySpeciesTypes.BEE, VEINED, BURNISHED, CONDUCTIVE, 0.08f).cave();
-		add(ForestrySpeciesTypes.BEE, VEINED, BURNISHED, STANNOUS, 0.05f).cave();
+		add(ForestrySpeciesTypes.BEE, VEINED, BURNISHED, CONDUCTIVE, 0.04f).cave();
+		add(ForestrySpeciesTypes.BEE, VEINED, BURNISHED, STANNOUS, 0.02f).cave();
 
 		// Metallic leaves, Glistening path (Stalwart more common, Regal rarer)
-		add(ForestrySpeciesTypes.BEE, VEINED, GLISTENING, STALWART, 0.08f).cave();
-		add(ForestrySpeciesTypes.BEE, VEINED, GLISTENING, REGAL, 0.04f).cave();
+		add(ForestrySpeciesTypes.BEE, VEINED, GLISTENING, STALWART, 0.04f).cave();
+		add(ForestrySpeciesTypes.BEE, VEINED, GLISTENING, REGAL, 0.02f).cave();
 		add(ForestrySpeciesTypes.BEE, LUXURIANT, MONASTIC, KLEPTOPLASTIC, 0.12f);
 		add(ForestrySpeciesTypes.BEE, KLEPTOPLASTIC, LUXURIANT, PHOTOSYNTHETIC, 0.08f);
 		add(ForestrySpeciesTypes.BEE, KLEPTOPLASTIC, MONASTIC, PHOTOSYNTHETIC, 0.08f);
