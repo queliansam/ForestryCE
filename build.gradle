@@ -662,6 +662,16 @@ tasks.named('processResources', ProcessResources) {
 	exclude 'assets/forestry/lang/check_translations.py'
 	// Blockbench project sources, kept in VCS so the models can be shared with teammates
 	exclude '**/*.bbmodel'
+
+	// tin_nugget has both a hand-authored model (src/main) and a datagen-produced one
+	// (src/generated), byte-identical but from two source roots, same as the en_us.json
+	// case above. Only the hand-written one belongs in the jar
+	var generatedRoot = project.file('src/generated/resources').absolutePath + File.separator
+	exclude { details ->
+		return !details.directory
+				&& details.relativePath.pathString == 'assets/forestry/models/item/tin_nugget.json'
+				&& details.file.absolutePath.startsWith(generatedRoot)
+	}
 }
 
 sourceSets.main {

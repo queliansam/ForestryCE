@@ -106,6 +106,7 @@ public class ApicultureForestryPlugin implements IForestryPlugin {
 		Supplier<List<ItemStack>> mossyComb = getHoneyComb(EnumHoneyComb.MOSSY);
 		Supplier<List<ItemStack>> spongeComb = getHoneyComb(EnumHoneyComb.SPONGY);
 		Supplier<List<ItemStack>> simmerComb = getHoneyComb(EnumHoneyComb.SIMMERING);
+		Supplier<List<ItemStack>> rubbleComb = getHoneyComb(EnumHoneyComb.RUBBLE);
 
 		apiculture.registerHive(ForestryBeeSpecies.FOREST, HiveDefinition.FOREST)
 			.setGenerationChance(HiveDefinition.FOREST.defaultGenChance())
@@ -163,6 +164,31 @@ public class ApicultureForestryPlugin implements IForestryPlugin {
 		apiculture.registerHive(ForestryBeeSpecies.EMBITTERED, HiveDefinition.NETHER)
 			.setGenerationChance(HiveDefinition.NETHER.defaultGenChance())
 			.addDrop(0.80, ForestryBeeSpecies.EMBITTERED, simmerComb, 0.7F);
+
+		apiculture.registerHive(ForestryBeeSpecies.STONE, HiveDefinition.STONE)
+			.setGenerationChance(HiveDefinition.STONE.defaultGenChance())
+			.addDrop(0.80, ForestryBeeSpecies.STONE, rubbleComb, 0.5F)
+			.addDrop(0.08, ForestryBeeSpecies.VALIANT, rubbleComb);
+
+		apiculture.registerHive(ForestryBeeSpecies.GRANITE, HiveDefinition.GRANITE)
+			.setGenerationChance(HiveDefinition.GRANITE.defaultGenChance())
+			.addDrop(0.80, ForestryBeeSpecies.GRANITE, rubbleComb, 0.5F)
+			.addDrop(0.08, ForestryBeeSpecies.VALIANT, rubbleComb);
+
+		apiculture.registerHive(ForestryBeeSpecies.ANDESITE, HiveDefinition.ANDESITE)
+			.setGenerationChance(HiveDefinition.ANDESITE.defaultGenChance())
+			.addDrop(0.80, ForestryBeeSpecies.ANDESITE, rubbleComb, 0.5F)
+			.addDrop(0.08, ForestryBeeSpecies.VALIANT, rubbleComb);
+
+		apiculture.registerHive(ForestryBeeSpecies.DIORITE, HiveDefinition.DIORITE)
+			.setGenerationChance(HiveDefinition.DIORITE.defaultGenChance())
+			.addDrop(0.80, ForestryBeeSpecies.DIORITE, rubbleComb, 0.5F)
+			.addDrop(0.08, ForestryBeeSpecies.VALIANT, rubbleComb);
+
+		apiculture.registerHive(ForestryBeeSpecies.DEEPSLATE, HiveDefinition.DEEPSLATE)
+			.setGenerationChance(HiveDefinition.DEEPSLATE.defaultGenChance())
+			.addDrop(0.80, ForestryBeeSpecies.DEEPSLATE, rubbleComb, 0.5F)
+			.addDrop(0.08, ForestryBeeSpecies.VALIANT, rubbleComb);
 
 		// Common village bees
 		apiculture.addVillageBee(ForestryBeeSpecies.FOREST, false);

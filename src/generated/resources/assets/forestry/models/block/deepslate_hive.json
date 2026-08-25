@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "forestry:block/beehives/deepslate.bottom",
-    "side": "forestry:block/beehives/deepslate.side",
-    "top": "forestry:block/beehives/deepslate.top"
+    "bottom": "forestry:block/hive/deepslate_bottom",
+    "side": "forestry:block/hive/deepslate_side",
+    "top": "forestry:block/hive/deepslate_top"
   }
 }

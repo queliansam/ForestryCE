@@ -31,6 +31,16 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "get_heavy_comb": {
+      "conditions": {
+        "items": [
+          {
+            "items": "forestry:heavy_comb"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "get_honey_comb": {
       "conditions": {
         "items": [
@@ -101,11 +111,41 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "get_resonating_comb": {
+      "conditions": {
+        "items": [
+          {
+            "items": "forestry:resonating_comb"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "get_rubble_comb": {
+      "conditions": {
+        "items": [
+          {
+            "items": "forestry:rubble_comb"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "get_sculken_comb": {
       "conditions": {
         "items": [
           {
             "items": "forestry:sculken_comb"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "get_sifted_comb": {
+      "conditions": {
+        "items": [
+          {
+            "items": "forestry:sifted_comb"
           }
         ]
       },
@@ -236,6 +276,18 @@
     ],
     [
       "get_sculken_comb"
+    ],
+    [
+      "get_rubble_comb"
+    ],
+    [
+      "get_sifted_comb"
+    ],
+    [
+      "get_resonating_comb"
+    ],
+    [
+      "get_heavy_comb"
     ]
   ],
   "sends_telemetry_event": true

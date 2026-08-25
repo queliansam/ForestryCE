@@ -143,31 +143,31 @@ public enum HiveDefinition implements IHiveDefinition {
 			return biome.is(BiomeTags.IS_NETHER);
 		}
 	},
-	STONE(ApicultureBlocks.BEEHIVE.get(BlockHiveType.STONE).defaultState(), 3.0F, ForestryBeeSpecies.STONE, new CaveCeilingHivePlacement(ForestryTags.Blocks.STONE_BEE_CEILING, ForestryTags.Blocks.CAVE_EXTRA_REPLACEABLES)) {
+	STONE(ApicultureBlocks.HIVE.get(HiveBlockType.STONE).defaultState(), 3.0F, ForestryBeeSpecies.STONE, new CaveCeilingHivePlacement(ForestryTags.Blocks.STONE_BEE_CEILING, ForestryTags.Blocks.CAVE_EXTRA_REPLACEABLES)) {
 		@Override
 		public boolean isGoodBiome(Holder<Biome> biome) {
 			return super.isGoodBiome(biome) && biome.is(Tags.Biomes.IS_CAVE);
 		}
 	},
-	GRANITE(ApicultureBlocks.BEEHIVE.get(BlockHiveType.GRANITE).defaultState(), 2.5F, ForestryBeeSpecies.GRANITE, new CaveCeilingHivePlacement(ForestryTags.Blocks.GRANITE_BEE_CEILING, ForestryTags.Blocks.CAVE_EXTRA_REPLACEABLES)) {
+	GRANITE(ApicultureBlocks.HIVE.get(HiveBlockType.GRANITE).defaultState(), 2.5F, ForestryBeeSpecies.GRANITE, new CaveCeilingHivePlacement(ForestryTags.Blocks.GRANITE_BEE_CEILING, ForestryTags.Blocks.CAVE_EXTRA_REPLACEABLES)) {
 		@Override
 		public boolean isGoodBiome(Holder<Biome> biome) {
 			return super.isGoodBiome(biome) && biome.is(Tags.Biomes.IS_CAVE);
 		}
 	},
-	ANDESITE(ApicultureBlocks.BEEHIVE.get(BlockHiveType.ANDESITE).defaultState(), 2.5F, ForestryBeeSpecies.ANDESITE, new CaveCeilingHivePlacement(ForestryTags.Blocks.ANDESITE_BEE_CEILING, ForestryTags.Blocks.CAVE_EXTRA_REPLACEABLES)) {
+	ANDESITE(ApicultureBlocks.HIVE.get(HiveBlockType.ANDESITE).defaultState(), 2.5F, ForestryBeeSpecies.ANDESITE, new CaveCeilingHivePlacement(ForestryTags.Blocks.ANDESITE_BEE_CEILING, ForestryTags.Blocks.CAVE_EXTRA_REPLACEABLES)) {
 		@Override
 		public boolean isGoodBiome(Holder<Biome> biome) {
 			return super.isGoodBiome(biome) && biome.is(Tags.Biomes.IS_CAVE);
 		}
 	},
-	DIORITE(ApicultureBlocks.BEEHIVE.get(BlockHiveType.DIORITE).defaultState(), 2.5F, ForestryBeeSpecies.DIORITE, new CaveCeilingHivePlacement(ForestryTags.Blocks.DIORITE_BEE_CEILING, ForestryTags.Blocks.CAVE_EXTRA_REPLACEABLES)) {
+	DIORITE(ApicultureBlocks.HIVE.get(HiveBlockType.DIORITE).defaultState(), 2.5F, ForestryBeeSpecies.DIORITE, new CaveCeilingHivePlacement(ForestryTags.Blocks.DIORITE_BEE_CEILING, ForestryTags.Blocks.CAVE_EXTRA_REPLACEABLES)) {
 		@Override
 		public boolean isGoodBiome(Holder<Biome> biome) {
 			return super.isGoodBiome(biome) && biome.is(Tags.Biomes.IS_CAVE);
 		}
 	},
-	DEEPSLATE(ApicultureBlocks.BEEHIVE.get(BlockHiveType.DEEPSLATE).defaultState(), 2.5F, ForestryBeeSpecies.DEEPSLATE, new CaveCeilingHivePlacement(ForestryTags.Blocks.DEEPSLATE_BEE_CEILING, ForestryTags.Blocks.CAVE_EXTRA_REPLACEABLES)) {
+	DEEPSLATE(ApicultureBlocks.HIVE.get(HiveBlockType.DEEPSLATE).defaultState(), 2.5F, ForestryBeeSpecies.DEEPSLATE, new CaveCeilingHivePlacement(ForestryTags.Blocks.DEEPSLATE_BEE_CEILING, ForestryTags.Blocks.CAVE_EXTRA_REPLACEABLES)) {
 		@Override
 		public boolean isGoodBiome(Holder<Biome> biome) {
 			return super.isGoodBiome(biome) && biome.is(Tags.Biomes.IS_CAVE);
