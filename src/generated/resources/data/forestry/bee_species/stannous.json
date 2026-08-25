@@ -1,6 +1,9 @@
 {
   "body": 9342606,
   "genome": {
+    "forestry:flower_type": {
+      "value": "forestry:flower_type_rock"
+    },
     "forestry:humidity_tolerance": {
       "value": "BOTH_2"
     },

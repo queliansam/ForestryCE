@@ -1015,6 +1015,7 @@ public class DefaultBeeSpecies {
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RESONATING), 0.20f)
 			.addSpecialty(new ItemStack(Items.REDSTONE), 0.10f)
 			.setGenome(genome -> {
+				genome.set(BeeChromosomes.FLOWER_TYPE, ForestryFlowerTypes.ROCK);
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
 				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
 				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
@@ -1029,6 +1030,7 @@ public class DefaultBeeSpecies {
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.HEAVY), 0.20f)
 			.addSpecialty(new ItemStack(Items.COAL), 0.10f)
 			.setGenome(genome -> {
+				genome.set(BeeChromosomes.FLOWER_TYPE, ForestryFlowerTypes.ROCK);
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
 				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
 				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
@@ -1042,6 +1044,7 @@ public class DefaultBeeSpecies {
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RESONATING), 0.10f)
 			.addSpecialty(ApicultureItems.DIAMOND_FRAGMENT.stack(), 0.04f)
 			.setGenome(genome -> {
+				genome.set(BeeChromosomes.FLOWER_TYPE, ForestryFlowerTypes.ROCK);
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
 				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_LONG);
 				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
@@ -1056,6 +1059,7 @@ public class DefaultBeeSpecies {
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RESONATING), 0.14f)
 			.addSpecialty(ApicultureItems.EMERALD_FRAGMENT.stack(), 0.08f)
 			.setGenome(genome -> {
+				genome.set(BeeChromosomes.FLOWER_TYPE, ForestryFlowerTypes.ROCK);
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
 				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_LONG);
 				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
@@ -1070,6 +1074,7 @@ public class DefaultBeeSpecies {
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RESONATING), 0.12f)
 			.addSpecialty(ApicultureItems.AMETHYST_FRAGMENT.stack(), 0.05f)
 			.setGenome(genome -> {
+				genome.set(BeeChromosomes.FLOWER_TYPE, ForestryFlowerTypes.ROCK);
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
 				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_LONG);
 				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
@@ -1084,6 +1089,7 @@ public class DefaultBeeSpecies {
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RESONATING), 0.16f)
 			.addSpecialty(new ItemStack(Items.LAPIS_LAZULI), 0.08f)
 			.setGenome(genome -> {
+				genome.set(BeeChromosomes.FLOWER_TYPE, ForestryFlowerTypes.ROCK);
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
 				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
 				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
@@ -1097,6 +1103,7 @@ public class DefaultBeeSpecies {
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.HEAVY), 0.16f)
 			.addSpecialty(ApicultureItems.COPPER_NUGGET.stack(), 0.08f)
 			.setGenome(genome -> {
+				genome.set(BeeChromosomes.FLOWER_TYPE, ForestryFlowerTypes.ROCK);
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
 				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
 				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
@@ -1110,6 +1117,7 @@ public class DefaultBeeSpecies {
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.HEAVY), 0.12f)
 			.addSpecialty(CoreItems.TIN_NUGGET.stack(), 0.05f)
 			.setGenome(genome -> {
+				genome.set(BeeChromosomes.FLOWER_TYPE, ForestryFlowerTypes.ROCK);
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
 				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
 				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
@@ -1124,6 +1132,7 @@ public class DefaultBeeSpecies {
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.HEAVY), 0.14f)
 			.addSpecialty(new ItemStack(Items.IRON_NUGGET), 0.08f)
 			.setGenome(genome -> {
+				genome.set(BeeChromosomes.FLOWER_TYPE, ForestryFlowerTypes.ROCK);
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
 				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
 				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
@@ -1138,6 +1147,7 @@ public class DefaultBeeSpecies {
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.HEAVY), 0.10f)
 			.addSpecialty(new ItemStack(Items.GOLD_NUGGET), 0.04f)
 			.setGenome(genome -> {
+				genome.set(BeeChromosomes.FLOWER_TYPE, ForestryFlowerTypes.ROCK);
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
 				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_LONG);
 				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
