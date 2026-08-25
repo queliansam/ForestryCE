@@ -9,7 +9,8 @@ public enum EnumPropolis implements TwoTintItem.ITwoTintItemSubtype {
 	NORMAL(TextColor.fromRgb(0xc5b24e)),
 	PULSATING(TextColor.fromRgb(0x2ccdb1)),
 	SILKY(TextColor.fromRgb(0xddff00)),
-	CRYSTALISED(TextColor.fromRgb(0xa876d1)),
+	// Uses its own hand-painted texture rather than the shared propolis.0 base, so this stays a no-op tint
+	CRYSTALISED(TextColor.fromRgb(0xffffff)),
 	;
 
 	private final String name;

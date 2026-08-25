@@ -1,4 +1,5 @@
 {
+  "body": 9342606,
   "genome": {
     "forestry:humidity_tolerance": {
       "value": "BOTH_2"
@@ -16,7 +17,7 @@
   },
   "genus": "smaragdapis",
   "glint": true,
-  "outline": 1564002,
+  "outline": 4255874,
   "products": [
     {
       "chance": 0.14,
@@ -26,7 +27,7 @@
   "specialties": [
     {
       "chance": 0.08,
-      "item": "forestry:emerald_piece"
+      "item": "forestry:emerald_fragment"
     }
   ],
   "species": "invidus"

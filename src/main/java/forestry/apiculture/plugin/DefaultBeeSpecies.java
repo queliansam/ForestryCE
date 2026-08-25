@@ -848,8 +848,14 @@ public class DefaultBeeSpecies {
 			.setAuthority("TheDarkColour")
 			.setSecret(true);
 
+		// Shared body/stripes for the whole rocky line, only outline varies per species
+		TextColor rockyBody = TextColor.fromRgb(0x8E8E8E);
+		TextColor rockyStripes = TextColor.fromRgb(0x000000);
+
 		// Stone
 		apiculture.registerSpecies(ForestryBeeSpecies.STONE, GENUS_ROCKY, SPECIES_STONE, true, TextColor.fromRgb(0x9c9c9c))
+			.setBody(rockyBody)
+			.setStripes(rockyStripes)
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RUBBLE), 0.30f)
 			.setGenome(genome -> {
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOWEST);
@@ -860,6 +866,8 @@ public class DefaultBeeSpecies {
 
 		// Granite
 		apiculture.registerSpecies(ForestryBeeSpecies.GRANITE, GENUS_ROCKY, SPECIES_GRANITE, true, TextColor.fromRgb(0xb08a7a))
+			.setBody(rockyBody)
+			.setStripes(rockyStripes)
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RUBBLE), 0.30f)
 			.setGenome(genome -> {
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOWEST);
@@ -870,6 +878,8 @@ public class DefaultBeeSpecies {
 
 		// Andesite
 		apiculture.registerSpecies(ForestryBeeSpecies.ANDESITE, GENUS_ROCKY, SPECIES_ANDESITE, true, TextColor.fromRgb(0x7d7d75))
+			.setBody(rockyBody)
+			.setStripes(rockyStripes)
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RUBBLE), 0.30f)
 			.setGenome(genome -> {
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOWEST);
@@ -880,6 +890,8 @@ public class DefaultBeeSpecies {
 
 		// Diorite
 		apiculture.registerSpecies(ForestryBeeSpecies.DIORITE, GENUS_ROCKY, SPECIES_DIORITE, true, TextColor.fromRgb(0xdcdcdc))
+			.setBody(rockyBody)
+			.setStripes(rockyStripes)
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RUBBLE), 0.30f)
 			.setGenome(genome -> {
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOWEST);
@@ -890,6 +902,8 @@ public class DefaultBeeSpecies {
 
 		// Deepslate
 		apiculture.registerSpecies(ForestryBeeSpecies.DEEPSLATE, GENUS_ROCKY, SPECIES_DEEPSLATE, true, TextColor.fromRgb(0x4a4a4d))
+			.setBody(rockyBody)
+			.setStripes(rockyStripes)
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RUBBLE), 0.30f)
 			.setGenome(genome -> {
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOWEST);
@@ -900,6 +914,8 @@ public class DefaultBeeSpecies {
 
 		// Structured (root hub, mirrors Common - bred from any 2 of the 5 wilds)
 		apiculture.registerSpecies(ForestryBeeSpecies.STRUCTURED, GENUS_ROCKY, SPECIES_STRUCTURED, true, TextColor.fromRgb(0x6e7239))
+			.setBody(rockyBody)
+			.setStripes(rockyStripes)
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RUBBLE), 0.30f)
 			.setGenome(genome -> {
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOWEST);
@@ -910,6 +926,8 @@ public class DefaultBeeSpecies {
 
 		// Mineral (second hub, mirrors Cultivated - bred from Structured x 1 wild)
 		apiculture.registerSpecies(ForestryBeeSpecies.MINERAL, GENUS_ROCKY, SPECIES_MINERAL, true, TextColor.fromRgb(0x8a7d5c))
+			.setBody(rockyBody)
+			.setStripes(rockyStripes)
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RUBBLE), 0.30f)
 			.setGenome(genome -> {
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOWEST);
@@ -920,6 +938,8 @@ public class DefaultBeeSpecies {
 
 		// Crystalline (first split - gemstone side, mirrors Diligent/Noble)
 		apiculture.registerSpecies(ForestryBeeSpecies.CRYSTALLINE, GENUS_GEMSTONE, SPECIES_CRYSTALLINE, true, TextColor.fromRgb(0xc9a0ff))
+			.setBody(rockyBody)
+			.setStripes(rockyStripes)
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.SIFTED), 0.28f)
 			.setGenome(genome -> {
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOWER);
@@ -930,6 +950,8 @@ public class DefaultBeeSpecies {
 
 		// Veined (first split - metallic side, mirrors Diligent/Noble)
 		apiculture.registerSpecies(ForestryBeeSpecies.VEINED, GENUS_METALLIC, SPECIES_VEINED, true, TextColor.fromRgb(0x8f6b4a))
+			.setBody(rockyBody)
+			.setStripes(rockyStripes)
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.SIFTED), 0.28f)
 			.setGenome(genome -> {
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOWER);
@@ -939,7 +961,9 @@ public class DefaultBeeSpecies {
 			});
 
 		// Lustrous (gemstone tier 2, Brilliant/Envious path)
-		apiculture.registerSpecies(ForestryBeeSpecies.LUSTROUS, GENUS_GEMSTONE, SPECIES_LUSTROUS, false, TextColor.fromRgb(0xd9b3ff))
+		apiculture.registerSpecies(ForestryBeeSpecies.LUSTROUS, GENUS_GEMSTONE, SPECIES_LUSTROUS, false, TextColor.fromRgb(0x66c3a5))
+			.setBody(rockyBody)
+			.setStripes(rockyStripes)
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RESONATING), 0.22f)
 			.setGenome(genome -> {
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
@@ -948,8 +972,10 @@ public class DefaultBeeSpecies {
 				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
 			});
 
-		// Opulent (gemstone tier 2, Serene/Ultramarine path)
-		apiculture.registerSpecies(ForestryBeeSpecies.OPULENT, GENUS_GEMSTONE, SPECIES_OPULENT, false, TextColor.fromRgb(0xba7fe0))
+		// Opulent (gemstone tier 2, Serene/Cerulean path)
+		apiculture.registerSpecies(ForestryBeeSpecies.OPULENT, GENUS_GEMSTONE, SPECIES_OPULENT, false, TextColor.fromRgb(0x7d70d6))
+			.setBody(rockyBody)
+			.setStripes(rockyStripes)
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RESONATING), 0.22f)
 			.setGenome(genome -> {
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
@@ -959,7 +985,9 @@ public class DefaultBeeSpecies {
 			});
 
 		// Burnished (metallic tier 2, Conductive/Stannous path)
-		apiculture.registerSpecies(ForestryBeeSpecies.BURNISHED, GENUS_METALLIC, SPECIES_BURNISHED, false, TextColor.fromRgb(0xb0a99f))
+		apiculture.registerSpecies(ForestryBeeSpecies.BURNISHED, GENUS_METALLIC, SPECIES_BURNISHED, false, TextColor.fromRgb(0xcda56e))
+			.setBody(rockyBody)
+			.setStripes(rockyStripes)
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.HEAVY), 0.22f)
 			.setGenome(genome -> {
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
@@ -969,7 +997,9 @@ public class DefaultBeeSpecies {
 			});
 
 		// Glistening (metallic tier 2, Stalwart/Regal path)
-		apiculture.registerSpecies(ForestryBeeSpecies.GLISTENING, GENUS_METALLIC, SPECIES_GLISTENING, false, TextColor.fromRgb(0xc0c0c0))
+		apiculture.registerSpecies(ForestryBeeSpecies.GLISTENING, GENUS_METALLIC, SPECIES_GLISTENING, false, TextColor.fromRgb(0xc3be41))
+			.setBody(rockyBody)
+			.setStripes(rockyStripes)
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.HEAVY), 0.22f)
 			.setGenome(genome -> {
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
@@ -978,8 +1008,10 @@ public class DefaultBeeSpecies {
 				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
 			});
 
-		// Pulsating (central branch - Redstone)
-		apiculture.registerSpecies(ForestryBeeSpecies.PULSATING, GENUS_REDSTONE, SPECIES_PULSATING, false, TextColor.fromRgb(0xb0201c))
+		// Pulsating (central branch - Redstone), rarer than Carbonised
+		apiculture.registerSpecies(ForestryBeeSpecies.PULSATING, GENUS_REDSTONE, SPECIES_PULSATING, false, TextColor.fromRgb(0xa80f01))
+			.setBody(rockyBody)
+			.setStripes(rockyStripes)
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RESONATING), 0.20f)
 			.addSpecialty(new ItemStack(Items.REDSTONE), 0.10f)
 			.setGenome(genome -> {
@@ -990,8 +1022,10 @@ public class DefaultBeeSpecies {
 			})
 			.setGlint(true);
 
-		// Carbonised (central branch - Coal)
-		apiculture.registerSpecies(ForestryBeeSpecies.CARBONISED, GENUS_COAL, SPECIES_CARBONISED, false, TextColor.fromRgb(0x2b2b2b))
+		// Carbonised (central branch - Coal), more common than Pulsating
+		apiculture.registerSpecies(ForestryBeeSpecies.CARBONISED, GENUS_COAL, SPECIES_CARBONISED, false, TextColor.fromRgb(0x1f1721))
+			.setBody(rockyBody)
+			.setStripes(rockyStripes)
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.HEAVY), 0.20f)
 			.addSpecialty(new ItemStack(Items.COAL), 0.10f)
 			.setGenome(genome -> {
@@ -1002,9 +1036,11 @@ public class DefaultBeeSpecies {
 			});
 
 		// Brilliant (gemstone leaf, Lustrous path - Diamond)
-		apiculture.registerSpecies(ForestryBeeSpecies.BRILLIANT, GENUS_DIAMOND, SPECIES_BRILLIANT, false, TextColor.fromRgb(0x5decf0))
+		apiculture.registerSpecies(ForestryBeeSpecies.BRILLIANT, GENUS_DIAMOND, SPECIES_BRILLIANT, false, TextColor.fromRgb(0x49ead6))
+			.setBody(rockyBody)
+			.setStripes(rockyStripes)
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RESONATING), 0.10f)
-			.addSpecialty(ApicultureItems.DIAMOND_PIECE.stack(), 0.04f)
+			.addSpecialty(ApicultureItems.DIAMOND_FRAGMENT.stack(), 0.04f)
 			.setGenome(genome -> {
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
 				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_LONG);
@@ -1014,9 +1050,11 @@ public class DefaultBeeSpecies {
 			.setGlint(true);
 
 		// Envious (gemstone leaf, Lustrous path - Emerald)
-		apiculture.registerSpecies(ForestryBeeSpecies.ENVIOUS, GENUS_EMERALD, SPECIES_ENVIOUS, false, TextColor.fromRgb(0x17dd62))
+		apiculture.registerSpecies(ForestryBeeSpecies.ENVIOUS, GENUS_EMERALD, SPECIES_ENVIOUS, false, TextColor.fromRgb(0x40f082))
+			.setBody(rockyBody)
+			.setStripes(rockyStripes)
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RESONATING), 0.14f)
-			.addSpecialty(ApicultureItems.EMERALD_PIECE.stack(), 0.08f)
+			.addSpecialty(ApicultureItems.EMERALD_FRAGMENT.stack(), 0.08f)
 			.setGenome(genome -> {
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
 				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_LONG);
@@ -1026,9 +1064,11 @@ public class DefaultBeeSpecies {
 			.setGlint(true);
 
 		// Serene (gemstone leaf, Opulent path - Amethyst)
-		apiculture.registerSpecies(ForestryBeeSpecies.SERENE, GENUS_AMETHYST, SPECIES_SERENE, false, TextColor.fromRgb(0x9966cc))
+		apiculture.registerSpecies(ForestryBeeSpecies.SERENE, GENUS_AMETHYST, SPECIES_SERENE, false, TextColor.fromRgb(0xb18cf0))
+			.setBody(rockyBody)
+			.setStripes(rockyStripes)
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RESONATING), 0.12f)
-			.addSpecialty(new ItemStack(Items.AMETHYST_SHARD), 0.05f)
+			.addSpecialty(ApicultureItems.AMETHYST_FRAGMENT.stack(), 0.05f)
 			.setGenome(genome -> {
 				genome.set(BeeChromosomes.SPEED, ForestryAlleles.SPEED_SLOW);
 				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_LONG);
@@ -1038,7 +1078,9 @@ public class DefaultBeeSpecies {
 			.setGlint(true);
 
 		// Cerulean (gemstone leaf, Opulent path - Lapis)
-		apiculture.registerSpecies(ForestryBeeSpecies.CERULEAN, GENUS_LAPIS, SPECIES_CERULEAN, false, TextColor.fromRgb(0x2f5da8))
+		apiculture.registerSpecies(ForestryBeeSpecies.CERULEAN, GENUS_LAPIS, SPECIES_CERULEAN, false, TextColor.fromRgb(0x5980df))
+			.setBody(rockyBody)
+			.setStripes(rockyStripes)
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.RESONATING), 0.16f)
 			.addSpecialty(new ItemStack(Items.LAPIS_LAZULI), 0.08f)
 			.setGenome(genome -> {
@@ -1049,7 +1091,9 @@ public class DefaultBeeSpecies {
 			});
 
 		// Conductive (metallic leaf, Burnished path - Copper)
-		apiculture.registerSpecies(ForestryBeeSpecies.CONDUCTIVE, GENUS_COPPER, SPECIES_CONDUCTIVE, false, TextColor.fromRgb(0xb87333))
+		apiculture.registerSpecies(ForestryBeeSpecies.CONDUCTIVE, GENUS_COPPER, SPECIES_CONDUCTIVE, false, TextColor.fromRgb(0xbf5935))
+			.setBody(rockyBody)
+			.setStripes(rockyStripes)
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.HEAVY), 0.16f)
 			.addSpecialty(ApicultureItems.COPPER_NUGGET.stack(), 0.08f)
 			.setGenome(genome -> {
@@ -1060,7 +1104,9 @@ public class DefaultBeeSpecies {
 			});
 
 		// Stannous (metallic leaf, Burnished path - Tin)
-		apiculture.registerSpecies(ForestryBeeSpecies.STANNOUS, GENUS_TIN, SPECIES_STANNOUS, false, TextColor.fromRgb(0xc9d6dd))
+		apiculture.registerSpecies(ForestryBeeSpecies.STANNOUS, GENUS_TIN, SPECIES_STANNOUS, false, TextColor.fromRgb(0x82929e))
+			.setBody(rockyBody)
+			.setStripes(rockyStripes)
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.HEAVY), 0.12f)
 			.addSpecialty(CoreItems.TIN_NUGGET.stack(), 0.05f)
 			.setGenome(genome -> {
@@ -1071,7 +1117,9 @@ public class DefaultBeeSpecies {
 			});
 
 		// Stalwart (metallic leaf, Glistening path - Iron)
-		apiculture.registerSpecies(ForestryBeeSpecies.STALWART, GENUS_IRON, SPECIES_STALWART, false, TextColor.fromRgb(0xd8d8d8))
+		apiculture.registerSpecies(ForestryBeeSpecies.STALWART, GENUS_IRON, SPECIES_STALWART, false, TextColor.fromRgb(0xa6a6a6))
+			.setBody(rockyBody)
+			.setStripes(rockyStripes)
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.HEAVY), 0.14f)
 			.addSpecialty(new ItemStack(Items.IRON_NUGGET), 0.08f)
 			.setGenome(genome -> {
@@ -1079,10 +1127,13 @@ public class DefaultBeeSpecies {
 				genome.set(BeeChromosomes.LIFESPAN, ForestryAlleles.LIFESPAN_NORMAL);
 				genome.set(BeeChromosomes.TEMPERATURE_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
 				genome.set(BeeChromosomes.HUMIDITY_TOLERANCE, ForestryAlleles.TOLERANCE_BOTH_2);
-			});
+			})
+			.setGlint(true);
 
 		// Regal (metallic leaf, Glistening path - Gold)
-		apiculture.registerSpecies(ForestryBeeSpecies.REGAL, GENUS_GOLD, SPECIES_REGAL, false, TextColor.fromRgb(0xffd700))
+		apiculture.registerSpecies(ForestryBeeSpecies.REGAL, GENUS_GOLD, SPECIES_REGAL, false, TextColor.fromRgb(0xe6af15))
+			.setBody(rockyBody)
+			.setStripes(rockyStripes)
 			.addProduct(BEE_COMBS.stack(EnumHoneyComb.HEAVY), 0.10f)
 			.addSpecialty(new ItemStack(Items.GOLD_NUGGET), 0.04f)
 			.setGenome(genome -> {

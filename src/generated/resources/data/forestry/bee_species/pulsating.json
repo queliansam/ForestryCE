@@ -1,4 +1,5 @@
 {
+  "body": 9342606,
   "genome": {
     "forestry:humidity_tolerance": {
       "value": "BOTH_2"
@@ -16,7 +17,7 @@
   },
   "genus": "pulverapis",
   "glint": true,
-  "outline": 11542556,
+  "outline": 11013889,
   "products": [
     {
       "chance": 0.2,

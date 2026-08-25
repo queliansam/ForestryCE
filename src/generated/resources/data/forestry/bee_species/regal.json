@@ -1,4 +1,5 @@
 {
+  "body": 9342606,
   "genome": {
     "forestry:humidity_tolerance": {
       "value": "BOTH_2"
@@ -16,7 +17,7 @@
   },
   "genus": "aurapis",
   "glint": true,
-  "outline": 16766720,
+  "outline": 15118101,
   "products": [
     {
       "chance": 0.1,

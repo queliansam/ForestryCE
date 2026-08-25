@@ -159,20 +159,27 @@ public class ForestryRecipeProvider {
 			recipe.group("copper_ingot");
 		});
 
-		// Emerald/Diamond pieces assemble into the full gem, same 3x3 shape as the nuggets
+		// Emerald/Diamond/Amethyst fragments assemble into the full gem, same 3x3 shape as the nuggets
 		recipes.shapedCrafting(RecipeCategory.MISC, Items.EMERALD, recipe -> {
-			recipe.define('#', ApicultureItems.EMERALD_PIECE);
+			recipe.define('#', ApicultureItems.EMERALD_FRAGMENT);
 			recipe.pattern("###");
 			recipe.pattern("###");
 			recipe.pattern("###");
 			recipe.group("emerald");
 		});
 		recipes.shapedCrafting(RecipeCategory.MISC, Items.DIAMOND, recipe -> {
-			recipe.define('#', ApicultureItems.DIAMOND_PIECE);
+			recipe.define('#', ApicultureItems.DIAMOND_FRAGMENT);
 			recipe.pattern("###");
 			recipe.pattern("###");
 			recipe.pattern("###");
 			recipe.group("diamond");
+		});
+		recipes.shapedCrafting(RecipeCategory.MISC, Items.AMETHYST_SHARD, recipe -> {
+			recipe.define('#', ApicultureItems.AMETHYST_FRAGMENT);
+			recipe.pattern("###");
+			recipe.pattern("###");
+			recipe.pattern("###");
+			recipe.group("amethyst_shard");
 		});
 
 		AlvearyBlock plain = ApicultureBlocks.ALVEARY.get(AlvearyBlock.Type.PLAIN).block();

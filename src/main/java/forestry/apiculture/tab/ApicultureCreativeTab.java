@@ -94,8 +94,9 @@ public class ApicultureCreativeTab {
 		items.accept(ApicultureItems.AMBER_DRONE);
 		items.accept(ApicultureItems.MOLTEN_HONEY_DROP);
 		items.accept(ApicultureItems.COPPER_NUGGET);
-		items.accept(ApicultureItems.EMERALD_PIECE);
-		items.accept(ApicultureItems.DIAMOND_PIECE);
+		items.accept(ApicultureItems.EMERALD_FRAGMENT);
+		items.accept(ApicultureItems.DIAMOND_FRAGMENT);
+		items.accept(ApicultureItems.AMETHYST_FRAGMENT);
 
 		SpeciesUtil.addTypeToCreativeTab(items, ForestrySpeciesTypes.BEE);
 	}

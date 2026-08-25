@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "forestry:item/emerald_piece"
+    "layer0": "forestry:item/amethyst_fragment"
   }
 }

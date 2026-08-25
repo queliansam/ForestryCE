@@ -1,4 +1,5 @@
 {
+  "body": 9342606,
   "genome": {
     "forestry:humidity_tolerance": {
       "value": "BOTH_2"
@@ -15,7 +16,8 @@
     }
   },
   "genus": "ferrumapis",
-  "outline": 14211288,
+  "glint": true,
+  "outline": 10921638,
   "products": [
     {
       "chance": 0.14,

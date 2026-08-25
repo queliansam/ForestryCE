@@ -1,4 +1,5 @@
 {
+  "body": 9342606,
   "genome": {
     "forestry:humidity_tolerance": {
       "value": "BOTH_2"
@@ -15,7 +16,7 @@
     }
   },
   "genus": "lazulapis",
-  "outline": 3104168,
+  "outline": 5865695,
   "products": [
     {
       "chance": 0.16,

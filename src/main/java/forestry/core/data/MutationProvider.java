@@ -193,8 +193,8 @@ public class MutationProvider implements DataProvider {
 		add(ForestrySpeciesTypes.BEE, MINERAL, STRUCTURED, CRYSTALLINE, 0.10f).cave();
 		add(ForestrySpeciesTypes.BEE, MINERAL, STRUCTURED, VEINED, 0.10f).cave();
 
-		// Central branch: the two branch-founders crossed directly
-		add(ForestrySpeciesTypes.BEE, CRYSTALLINE, VEINED, PULSATING, 0.08f).cave();
+		// Central branch: the two branch-founders crossed directly. Pulsating is rarer than Carbonised.
+		add(ForestrySpeciesTypes.BEE, CRYSTALLINE, VEINED, PULSATING, 0.05f).cave();
 		add(ForestrySpeciesTypes.BEE, CRYSTALLINE, VEINED, CARBONISED, 0.08f).cave();
 
 		// Gemstone tier 2 fork (Opulent more common, Lustrous rarer)
